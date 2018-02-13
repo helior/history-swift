@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3FBB42122032753F00734296 /* history_swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FBB42102032753F00734296 /* history_swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FBB421A20336D5C00734296 /* HistorySwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB421920336D5C00734296 /* HistorySwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3FBB420D2032753F00734296 /* history_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = history_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBB42102032753F00734296 /* history_swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = history_swift.h; sourceTree = "<group>"; };
 		3FBB42112032753F00734296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FBB421920336D5C00734296 /* HistorySwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorySwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				3FBB42102032753F00734296 /* history_swift.h */,
 				3FBB42112032753F00734296 /* Info.plist */,
+				3FBB421920336D5C00734296 /* HistorySwift.swift */,
 			);
 			path = "history-swift";
 			sourceTree = "<group>";
@@ -74,6 +77,7 @@
 				3FBB42092032753F00734296 /* Frameworks */,
 				3FBB420A2032753F00734296 /* Headers */,
 				3FBB420B2032753F00734296 /* Resources */,
+				3FBB421820336B9C00734296 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -95,6 +99,7 @@
 				TargetAttributes = {
 					3FBB420C2032753F00734296 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -126,11 +131,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3FBB421820336B9C00734296 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3FBB42082032753F00734296 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FBB421A20336D5C00734296 /* HistorySwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +275,7 @@
 		3FBB42162032753F00734296 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -266,6 +289,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "info.helior.history-swift";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -274,6 +298,7 @@
 		3FBB42172032753F00734296 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
