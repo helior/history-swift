@@ -15,7 +15,7 @@
 		3FBB420D2032753F00734296 /* history_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = history_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBB42102032753F00734296 /* history_swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = history_swift.h; sourceTree = "<group>"; };
 		3FBB42112032753F00734296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3FBB421920336D5C00734296 /* HistorySwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HistorySwift.swift; path = ../src/HistorySwift.swift; sourceTree = "<group>"; };
+		3FBB421920336D5C00734296 /* HistorySwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HistorySwift.swift; path = "../history-swift/HistorySwift.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +52,7 @@
 				3FBB42112032753F00734296 /* Info.plist */,
 				3FBB421920336D5C00734296 /* HistorySwift.swift */,
 			);
-			name = "history-swift";
-			path = src;
+			path = "history-swift";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
