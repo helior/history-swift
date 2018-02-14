@@ -70,7 +70,8 @@
 				3FBB423020337E7E00734296 /* LaunchScreen.storyboard */,
 				3FBB423320337E7E00734296 /* Info.plist */,
 			);
-			path = HistorySwiftExample;
+			name = HistorySwiftExample;
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

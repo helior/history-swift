@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "History",
+        "repositoryURL": "https://github.com/helior/history-swift.git",
+        "state": {
+          "branch": null,
+          "revision": "ca96e12aabe4fe727b9deb5f1a48b9a9378aa0b0",
+          "version": "0.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
