@@ -11,15 +11,15 @@ import Foundation
 class HistorySwift {
     static let shared = HistorySwift()
     private var values = [String]()
-    
+
     private init() {
-        
+
     }
-    
-    func addValue(item:String) {
+
+    func addValue(item: String) {
         self.values.append(item)
     }
-    
+
     func getValues() -> [String] {
         return self.values
     }
